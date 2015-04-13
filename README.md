@@ -1,7 +1,9 @@
-gulp-noder
-==========
+# gulp-noder
 
-Gulp plugin for to ease packaging with Noder. Usage:
+
+Gulp plugin for to ease packaging with Noder.
+
+Example usage:
 
 ```javascript
 var gulp = require('gulp');
@@ -13,11 +15,11 @@ var uglify = require('gulp-uglify');
 
 gulp.task('package', function () {
     gulp.src('src/**/*.+(hsp|js)')
-        .pipe(hsp.process())        //compile and transpile #space files
-        .pipe(noder.package('/src'))//wrap CommonJS so they can be loaded with Noder.js
-        .pipe(concat('all.min.js')) //combine files together
-        .pipe(noder.wrap())         //entire file wrapping needed by Noder.js
-        .pipe(uglify())             //minify
-        .pipe(gulp.dest('dist'));   //copy to the destination folder
+        .pipe(hsp.process())         //compile and transpile #space files
+        .pipe(noder.package('/src')) //wrap CommonJS so they can be loaded with Noder.js
+        .pipe(concat('all.min.js'))  //combine files together
+        .pipe(noder.wrap())          //entire file wrapping needed by Noder.js
+        .pipe(uglify())              //minify
+        .pipe(gulp.dest('dist'));    //copy to the destination folder
 });
 ```
