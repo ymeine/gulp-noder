@@ -5,6 +5,7 @@ var path = require('path');
 // ------------------------------------------------------------------------- 3rd
 
 var through = require('through2');
+var sourceMap = require('source-map');
 
 // --------------------------------------------------------------- own libraries
 

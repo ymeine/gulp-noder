@@ -1,6 +1,5 @@
 # gulp-noder
 
-
 Gulp plugin for to ease packaging with Noder.
 
 Example usage:
@@ -23,3 +22,13 @@ gulp.task('package', function () {
         .pipe(gulp.dest('dist'));    //copy to the destination folder
 });
 ```
+
+
+
+
+
+# Resources
+
+- [noderJS - A dependencies loader for browsers](http://noder-js.ariatemplates.com/index.html)
+- [gulp.js - the streaming build system](http://gulpjs.com/)
+- [floridoo/gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps), [gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)
